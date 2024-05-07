@@ -40,4 +40,25 @@
 
     ];
 
+
+// function array filtered
+
+    function getHotelData($hotel)
+{      
+     $arrayF = $hotel;
+    if (!empty($_GET['parking']) || !empty($_GET['vote'])) {
+        $parking = $_GET['parking'];
+        $vote = $_GET['vote'];
+        $arrayF = array_filter($hotel, function ($key) use ($parking) {
+            return $key['parking'] == $parking || $parking == "all";
+        });
+        $arrayF = array_filter($arrayF, function ($key) use ($vote) {
+            return $key['vote'] >= $vote || $vote == "all";
+        });
+
+    }
+
+    return $arrayF;
+}
+
 ?>
