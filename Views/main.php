@@ -7,8 +7,8 @@ foreach ($hotels as $key) {
 
 
 <main>
-    <table class="table">
-        <thead>
+    <table class="table container my-5 ">
+        <thead >
             <tr>
                 <th scope="col">Name</th>
                 <th scope="col">Description</th>
