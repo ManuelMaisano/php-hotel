@@ -6,7 +6,7 @@ $users = [
         'name' => 'Manuel',
         'surname' => 'Maisano',
         'password' => '12345',
-        'email' => 'manumaisano@gmail.com.com',
+        'email' => 'manumaisano@gmail.com.',
     ],
     [
         'id' => 2,
